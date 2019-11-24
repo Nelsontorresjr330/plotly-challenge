@@ -44,20 +44,18 @@ function buildCharts(sample) {
       mode:"markers", 
       marker:{
         size: svalues,
-        //color: x,
         colorscale: "Rainbow",
         labels: label,
-        type: 'scatter',
-        //opacity: 0.3
+        type: 'scatter'
       }
     };
 
     var test2 = [bub_trace];
 
     var layout = {
+      showlegend: true,
       title: 'Marker Size',
-      xaxis: { title: 'OTU ID' },
-      //showlegend: true
+      xaxis: { title: 'OTU ID' }
     };
 
     Plotly.newPlot("bubble", test2, layout); 
